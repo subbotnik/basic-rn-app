@@ -13,16 +13,15 @@ const TabNavigator = createBottomTabNavigator(
   {
     defaultNavigationOptions: ({ navigation }) => ({
       tabBarIcon: ({ focused, horizontal, tintColor }) => {
-        console.log(focused, horizontal, tintColor);
         const { routeName } = navigation.state;
         let IconComponent = Ionicons;
         let iconName;
         if (routeName === 'Home') {
-          iconName = `ios-information-circle${focused ? '' : '-outline'}`;
+          iconName = `ios-home`;
           // Sometimes we want to add badges to some icons.
           // You can check the implementation below.;
         } else if (routeName === 'Profile') {
-          iconName = `ios-options${focused ? '' : '-outline'}`;
+          iconName = 'ios-person';
         }
 
         // You can return any component that you like here!
