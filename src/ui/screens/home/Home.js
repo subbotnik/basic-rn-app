@@ -7,10 +7,13 @@ class Home extends Component {
   };
 
   render() {
-    const { data, clickCounter } = this.props;
+    const { data, clickCounter, navigation } = this.props;
     return (
-      <View>
+      <View style={{ paddingTop: 30 }}>
         <Text>Home Screen</Text>
+        <TouchableOpacity onPress={navigation.openDrawer}>
+          <Text>Open Drawer</Text>
+        </TouchableOpacity>
         <TouchableOpacity onPress={clickCounter}>
           <Text>{`Click ${data}`}</Text>
         </TouchableOpacity>

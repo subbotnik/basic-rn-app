@@ -28,7 +28,6 @@ function reducer(state = initialState, action) {
       };
     }
     case types.COUNT.SET: {
-      console.log('asdasd');
       return {
         ...state,
         data: state.data + 1,
