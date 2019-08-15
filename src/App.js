@@ -6,7 +6,7 @@ import RootNavigation from './navigation';
 
 UIManager.setLayoutAnimationEnabledExperimental &&
   UIManager.setLayoutAnimationEnabledExperimental(true);
-
+//test
 export default class App extends Component {
   componentDidMount() {
     //SplashScreen.hide();
