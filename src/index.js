@@ -4,7 +4,7 @@ import { PersistGate } from 'redux-persist/integration/react';
 
 import App from './App';
 import configStore from './configStore';
-
+//test
 const { store, persistor } = configStore();
 
 export default () => {
