@@ -11,7 +11,7 @@ export default () => {
   return (
     <Provider store={store}>
       <PersistGate loading={null} persistor={persistor}>
-        <App />
+        <App {...store} />
       </PersistGate>
     </Provider>
   );
